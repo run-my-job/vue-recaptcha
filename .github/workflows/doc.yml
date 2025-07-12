@@ -1,13 +1,9 @@
 name: Build document
 
-on:
-  push:
-    branches:
-      - v3
-
+on: push
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: puzl-ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
